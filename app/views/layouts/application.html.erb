@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ottos</title>
+    <title>Otto's Appliance Service, Inc.</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,7 +14,62 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <%= content_tag :body, id: page_id, class: page_classes do %>
+    <nav>
+      <%= link_to "Otto's Appliance Service, Inc.", root_path, id: 'logo' %>
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Services', services_path %></li>
+        <li><%= link_to 'Contact Us', contact_path %></li>
+      </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <%= yield :jumbotron %>
+    </div>
+
     <%= yield %>
-  </body>
+
+    <footer>
+      <div class="footer-columns">
+        <section>
+          <h4>Company Information</h4>
+          <ul>
+            <li><%= link_to 'About', about_path(anchor: 'about-us') %></li>
+            <li><%= link_to 'Review', about_path(anchor: 'reviews') %></li>
+            <li><%= link_to 'Contact Us', contact_path %></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Our Services</h4>
+          <ul>
+            <li><%= link_to 'Appliances', services_path(anchor: 'appliances') %></li>
+            <li><%= link_to 'Brands', services_path(anchor: 'brands') %></li>
+            <li><%= link_to 'Locations', services_path(anchor: 'locations') %></li>
+          </ul>
+        </section>
+        <section class="footer-yelp">
+          <%= link_to 'http://www.yelp.com/biz/ottos-appliance-service-millbrae' do %>
+            <i class="fa fa-yelp"></i>Yelp
+          <% end %>
+        </section>
+      </div>
+
+      <div class="footer-copyright">
+        &copy;<%= Time.now.year %> Otto's Appliance, Inc. All rights reserved.
+      </div>
+    </footer>
+  <% end %>
+
+  <script>
+    window.onscroll = function(){
+      console.log("scrolled: ", window.scrollY);
+      if(window.scrollY > 500) {
+        document.querySelector('nav').classList = 'floating'
+      } else {
+        document.querySelector('nav').classList = ''
+      }
+    }
+  </script>
 </html>

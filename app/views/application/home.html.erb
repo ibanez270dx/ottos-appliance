@@ -1,0 +1,81 @@
+<% content_for :jumbotron do %>
+  <header>
+    <h1>Otto's Appliance Service Inc.</h1>
+    <h2>Serving prompt, reliable appliance repairs since 1957.</h2>
+    <!-- Celebrating 60 years ribbon -->
+    <div class="ribbon-container one">
+      <div class="bk l">
+        <div class="arrow top"></div>
+        <div class="arrow bottom"></div>
+      </div>
+      <div class="skew l"></div>
+      <div class="main">
+        <div>Celebrating <span><%= years_since('1957-07-01') %></span> years of service</div>
+      </div>
+      <div class="skew r"></div>
+      <div class="bk r">
+        <div class="arrow top"></div>
+        <div class="arrow bottom"></div>
+      </div>
+    </div>
+
+  </header>
+
+<% end %>
+
+<main>
+  <div id="information">
+    <div class="hours">
+      <strong>Business Hours</strong>
+      <br />8am - 5pm, Monday - Thursday
+      <br />8am - 12pm, Friday
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td class="contact-td"><i class="fa fa-phone fa-2x"></i></td>
+          <td class="contact-td"><strong><a href="tel:6505880309">650-588-0309</a></strong></td>
+        </tr>
+        <tr>
+          <td class="contact-td"><i class="fa fa-envelope fa-2x"></i></td>
+          <td class="contact-td"><strong><a href="mailto:ottos94030@gmail.com">ottos94030@gmail.com</a></strong></td>
+        </tr>
+        <tr>
+          <td class="contact-td"><i id="map-marker" class="fa fa-map-marker fa-2x"></i></td>
+          <td class="contact-td"><strong><a href="https://www.google.com/maps/place/1663+El+Camino+Real,+Millbrae,+CA+94030/@37.6132887,-122.4069047,17z/data=!3m1!4b1!4m5!3m4!1s0x808f777773340c9b:0x62d8ee674c3d0a6!8m2!3d37.6132887!4d-122.404716">1663 El Camino Real, Millbrae, CA 94030</a></strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+
+  <section id="brands-we-service">
+    <h3>Brands We Service</h3>
+    <div class="brand-logo"><%= image_tag "Thermador.png", alt: "Thermador" %></div>
+    <div class="brand-logo"><%= image_tag "Bosch.png", alt: "Bosch" %></div>
+    <div class="brand-logo"><%= image_tag "Insinkerator.png", alt: "Insinkerator" %></div>
+  </section>
+
+  <section id="testimonials">
+    <h3>Customer Testimonials</h3>
+
+    <article class="testimonial">
+      <p>&ldquo;Outstanding customer service, professional and prompt.&rdquo;</p>
+      <div class="author">Mary Ann, Redwood City</div>
+    </article>
+
+    <article class="testimonial">
+      <p>&ldquo;On time, professional, and a good value. This is what local business should be.&rdquo;</p>
+      <div class="author">Dean, Burlingame</div>
+    </article>
+
+    <article class="testimonial">
+      <p>&ldquo;This company from the office to the techs is way above the rest.&rdquo;</p>
+      <div class="author">Gary, Redwood City</div>
+    </article>
+
+    <%= link_to 'http://www.yelp.com/biz/ottos-appliance-service-millbrae' do %>
+      See more on <i class="fa fa-yelp"></i>Yelp
+    <% end %>
+  </section>
+</main>
