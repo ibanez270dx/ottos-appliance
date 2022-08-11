@@ -1,0 +1,43 @@
+#application.services {
+
+  .jumbotron {
+    background-image: url(asset-path('cable-car.jpg'));
+
+    &::before {
+      background-color: rgba(0, 0, 30, 0.5);
+    }
+  }
+
+  #factory-authorized-service {
+    margin: 0 -1rem;
+    padding: 1rem 1rem 1.75rem;
+    text-align: center;
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 75px;
+
+      img {
+        display: block;
+        transition: all 0.5s;
+        opacity: 0.5;
+      }
+
+      &:hover img {
+        opacity: 1;
+      }
+    }
+
+    @media(min-width: 768px) {
+      .brand-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+
+
+}

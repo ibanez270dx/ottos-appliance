@@ -55,6 +55,15 @@ nav {
   background-position: 25% center;
   background-size: cover;
 
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 30, 0.3);
+  }
+
   header {
     z-index: 1;
     margin: 0 auto;
@@ -63,12 +72,29 @@ nav {
     text-align: center;
     text-shadow: 0 0 20px #2d3a4a;
   }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 3.25rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
 }
 
 main {
   margin-top: 565px;
+  padding: 1rem;
+  border-top: 8px solid #8c001a;
   background-color: #fff;
   background-image: url(asset-path('bg.png'));
+  box-shadow: 0 0 50px 25px #091323;
 }
 
 footer {
