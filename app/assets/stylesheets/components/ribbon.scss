@@ -15,7 +15,7 @@
 }
 
 .ribbon-container .main {
-  background: #e74c3c;
+  background: #bd3739;
   position: relative;
   display: block;
   width: 90%;
@@ -41,7 +41,7 @@
 }
 
 .bk {
- background: darken(#e74c3c, 10%);
+ background: darken(#bd3739, 10%);
  position: absolute;
  width: 8%;
  top: 12px;
@@ -57,7 +57,7 @@
 
 .skew {
   position: absolute;
-  background: darken(#e74c3c, 25%);
+  background: darken(#bd3739, 25%);
   width: 3%;
   top: 6px;
   z-index: 5;
@@ -93,27 +93,27 @@
   top: 0px;
   border-top: 0px solid transparent;
 	border-bottom: 25px solid transparent;
-	border-right: 30px solid darken(#e74c3c, 10%);
+	border-right: 30px solid darken(#bd3739, 10%);
 }
 
 .arrow.bottom {
   top: 25px;
   border-top: 25px solid transparent;
 	border-bottom:0px solid transparent;
-	border-right: 30px solid darken(#e74c3c, 10%);
+	border-right: 30px solid darken(#bd3739, 10%);
 }
 
 .r .bottom {
   border-top: 25px solid transparent;
 	border-bottom: 0px solid transparent;
-	border-left: 30px solid darken(#e74c3c, 10%);
+	border-left: 30px solid darken(#bd3739, 10%);
   border-right: none;
 }
 
 .r .top {
   border-bottom: 25px solid transparent;
 	border-top: 0px solid transparent;
-	border-left: 30px solid darken(#e74c3c, 10%);
+	border-left: 30px solid darken(#bd3739, 10%);
   border-right: none;
 }
 

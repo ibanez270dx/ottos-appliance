@@ -18,9 +18,7 @@
         <div class="arrow bottom"></div>
       </div>
     </div>
-
   </header>
-
 <% end %>
 
 <main>
@@ -30,30 +28,29 @@
       <br />8am - 5pm, Monday - Thursday
       <br />8am - 12pm, Friday
     </div>
-    <table>
-      <tbody>
-        <tr>
-          <td class="contact-td"><i class="fa fa-phone fa-2x"></i></td>
-          <td class="contact-td"><strong><a href="tel:6505880309">650-588-0309</a></strong></td>
-        </tr>
-        <tr>
-          <td class="contact-td"><i class="fa fa-envelope fa-2x"></i></td>
-          <td class="contact-td"><strong><a href="mailto:ottos94030@gmail.com">ottos94030@gmail.com</a></strong></td>
-        </tr>
-        <tr>
-          <td class="contact-td"><i id="map-marker" class="fa fa-map-marker fa-2x"></i></td>
-          <td class="contact-td"><strong><a href="https://www.google.com/maps/place/1663+El+Camino+Real,+Millbrae,+CA+94030/@37.6132887,-122.4069047,17z/data=!3m1!4b1!4m5!3m4!1s0x808f777773340c9b:0x62d8ee674c3d0a6!8m2!3d37.6132887!4d-122.404716">1663 El Camino Real, Millbrae, CA 94030</a></strong></td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
+    <div class="information-container">
+      <div class="information-block">
+        <span class="information-icon"><i class="fa fa-phone fa-2x"></i></span>
+        <span class="information-content"><strong><a href="tel:6505880309">650-588-0309</a></strong></span>
+      </div>
+      <div class="information-block">
+        <span class="information-icon"><i class="fa fa-envelope fa-2x"></i></span>
+        <span class="information-content"><strong><a href="mailto:ottos94030@gmail.com">ottos94030@gmail.com</a></strong></span>
+      </div>
+      <div class="information-block">
+        <span class="information-icon"><i class="fa fa-map-marker fa-2x"></i></span>
+        <span class="information-content"><strong><a href="https://www.google.com/maps/place/1663+El+Camino+Real,+Millbrae,+CA+94030/@37.6132887,-122.4069047,17z/data=!3m1!4b1!4m5!3m4!1s0x808f777773340c9b:0x62d8ee674c3d0a6!8m2!3d37.6132887!4d-122.404716">1663 El Camino Real, Millbrae, CA 94030</a></strong></span>
+      </div>
+    </div>
   </div>
 
   <section id="brands-we-service">
     <h3>Brands We Service</h3>
-    <div class="brand-logo"><%= image_tag "Thermador.png", alt: "Thermador" %></div>
-    <div class="brand-logo"><%= image_tag "Bosch.png", alt: "Bosch" %></div>
-    <div class="brand-logo"><%= image_tag "Insinkerator.png", alt: "Insinkerator" %></div>
+    <div class="brand-container">
+      <div class="brand-logo"><%= image_tag "Thermador.png", alt: "Thermador" %></div>
+      <div class="brand-logo"><%= image_tag "Bosch.png", alt: "Bosch" %></div>
+      <div class="brand-logo"><%= image_tag "Insinkerator.png", alt: "Insinkerator" %></div>
+    </div>
   </section>
 
   <section id="testimonials">

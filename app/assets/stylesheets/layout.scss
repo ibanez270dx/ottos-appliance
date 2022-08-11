@@ -26,12 +26,17 @@ nav {
   }
 
   a {
+    transition: all 0.25s;
     color: #cbcbcb;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   &.floating {
     transition: all 0.25s;
-    background-color: rgba(#303e4e, 0.95);
+    background-color: darken(#80171F, 5%);
   }
 }
 
@@ -47,11 +52,12 @@ nav {
 
   background-color: #07080b;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 25% center;
   background-size: cover;
 
   header {
     z-index: 1;
+    margin: 0 auto;
     padding: 1rem;
     color: #fff;
     text-align: center;
@@ -62,6 +68,7 @@ nav {
 main {
   margin-top: 565px;
   background-color: #fff;
+  background-image: url(asset-path('bg.png'));
 }
 
 footer {
@@ -71,8 +78,8 @@ footer {
 
   h4 {
     margin: 0;
-    font-size: 0.9rem;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
     font-weight: 700;
   }
 
@@ -108,5 +115,13 @@ footer {
     color: rgba(#fff, 0.75);
     font-size: 0.75rem;
     text-align: center;
+  }
+
+  @media(min-width: 768px) {
+    .footer-columns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }

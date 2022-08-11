@@ -36,8 +36,8 @@
         <section>
           <h4>Company Information</h4>
           <ul>
-            <li><%= link_to 'About', about_path(anchor: 'about-us') %></li>
-            <li><%= link_to 'Review', about_path(anchor: 'reviews') %></li>
+            <li><%= link_to 'About', about_path %></li>
+            <li><%= link_to 'Reviews', about_path(anchor: 'reviews') %></li>
             <li><%= link_to 'Contact Us', contact_path %></li>
           </ul>
         </section>
@@ -64,7 +64,6 @@
 
   <script>
     window.onscroll = function(){
-      console.log("scrolled: ", window.scrollY);
       if(window.scrollY > 500) {
         document.querySelector('nav').classList = 'floating'
       } else {
