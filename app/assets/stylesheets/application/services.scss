@@ -1,7 +1,7 @@
 #application.services {
 
   .jumbotron {
-    background-image: url(asset-path('cable-car.jpg'));
+    background-image: url(asset-path('cable-car.jpeg'));
 
     &::before {
       background-color: rgba(0, 0, 30, 0.5);
