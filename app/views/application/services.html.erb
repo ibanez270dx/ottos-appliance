@@ -1,17 +1,52 @@
 <% content_for :jumbotron do %>
   <header>
     <h1>Otto's Appliance Service Inc.</h1>
-    <h2>Services</h2>
+    <h2>Our Services</h2>
   </header>
 <% end %>
 
 <main class="text-center">
   <section id="factory-authorized-service">
-    <h2>Factory Authorized Service</h2>
+    <a name="brands"><h2>Factory Authorized Service</h2></a>
     <div class="brand-container">
       <div class="brand-logo"><%= image_tag "Thermador-color.png", alt: "Thermador" %></div>
       <div class="brand-logo"><%= image_tag "Bosch-color.png", alt: "Bosch" %></div>
       <div class="brand-logo"><%= image_tag "Insinkerator-color.png", alt: "Insinkerator" %></div>
     </div>
+  </section>
+
+  <section id="appliances">
+    <a name="appliances"></a>
+    <div class="appliances-container">
+      <% %w(oven range cooktop microwave dishwasher disposal hot-water-dispenser).each do |appliance| %>
+        <figure>
+          <%= image_tag "appliance-icons/#{appliance}.png" %>
+          <figcaption><%= appliance.titleize.pluralize %></figcaption>
+        </figure>
+      <% end %>
+    </div>
+  </section>
+
+  <section id="service-area">
+    <a name="service-area"><h2>Service Area</h2></a>
+    <ul class="service-area-list">
+      <li>San Francisco</li>
+      <li>Pacifica</li>
+      <li>Daily City</li>
+      <li>Brisbane</li>
+      <li>San Bruno</li>
+      <li>South San Francisco</li>
+      <li>Millbrae</li>
+      <li>Burlingame</li>
+      <li>Hillsborough</li>
+      <li>San Mateo</li>
+      <li>Foster City</li>
+      <li>Redwood Shores</li>
+      <li>Redwood City</li>
+      <li>Woodside</li>
+      <li>Portola Valley</li>
+      <li>Menlo Park</li>
+      <li>Palo Alto</li>
+    </ul>
   </section>
 </main>

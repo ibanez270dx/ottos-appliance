@@ -1,0 +1,65 @@
+#application.contact {
+  .jumbotron {
+    background-image: url(asset-path('sutro-tower.jpeg'));
+
+    &::before {
+      background-color: rgba(0, 0, 30, 0.5);
+    }
+  }
+
+  .ottos-logo {
+    text-align: center;
+
+     img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  #information {
+    padding-top: 0.75rem;
+
+    .hours {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .information-container {
+      margin: 1rem 0;
+    }
+
+    .information-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      font-weight: 400;
+
+      i { color: #8c001a; }
+      a { color: #000; }
+      strong { font-weight: 600; }
+      &:last-child { border-bottom: 0; }
+    }
+
+    .information-icon {
+      display: inline-block;
+      min-width: 64px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    @media(min-width: 1024px) {
+      .information-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .information-block {
+        border-bottom: 0;
+      }
+    }
+  }
+
+}

@@ -9,7 +9,8 @@
   }
 
   #factory-authorized-service {
-    margin: 0 -1rem;
+    max-width: 1024px;
+    margin: 0 auto;
     padding: 1rem 1rem 1.75rem;
     text-align: center;
 
@@ -39,5 +40,35 @@
     }
   }
 
+  #appliances {
+    max-width: 1024px;
+    margin: 0 auto;
 
+   .appliances-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      figure {
+        width: 150px;
+      }
+    }
+  }
+
+  #service-area {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .service-area-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+      padding: 1rem 0.5rem;
+    }
+  }
 }
