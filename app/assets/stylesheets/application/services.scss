@@ -47,8 +47,9 @@
    .appliances-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: space-around;
+
       figure {
         width: 150px;
       }
@@ -65,10 +66,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
     list-style: none;
 
     li {
-      padding: 1rem 0.5rem;
+      padding: 1rem 0.75rem;
     }
   }
 }
