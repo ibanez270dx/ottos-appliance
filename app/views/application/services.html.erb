@@ -18,7 +18,7 @@
   <section id="appliances">
     <a name="appliances"></a>
     <div class="appliances-container">
-      <% %w(oven range cooktop microwave dishwasher disposal hot-water-dispenser).each do |appliance| %>
+      <% %w(dishwasher disposal hot-water-dispenser).each do |appliance| %>
         <figure>
           <%= image_tag "appliance-icons/#{appliance}.png" %>
           <figcaption><%= appliance.titleize.pluralize %></figcaption>
